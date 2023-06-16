@@ -39,12 +39,12 @@
     <script>
         thumbs.onclick = function (event) {
 
-            const p = document.querySelector('p');
-            p.firstChild.src;
+            const container = document.querySelector('p');
+            container.firstChild.src;
             event.preventDefault();
 
             const target = event.target.closest('a')
-            p.innerHTML = `<img id="largeImg" src=${target.href} alt=${target.title}>`
+            container.innerHTML = `<img id="largeImg" src=${target.href} alt=${target.title}>`
         }
     </script>
 
